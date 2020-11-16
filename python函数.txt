@@ -1,0 +1,48 @@
+list类型 逗号隔开  ",".join(list)
+
+urllib.parse.urljoin(a, b)  拼接url 全路径  a+b
+
+对字符串 占位处理       "aaccc{}".format()
+
+ 正则    re.match(a, b)  a正则表达式  b 字符串   
+
+请求  html = requests.get(a) a url  
+
+json.loads(html.text) 格式化json转 dict
+
+is.instance(url, str): 是否是字符串
+url.encode("utf-8") 转化utf-8
+#md5加密
+m = hashlib.md5()
+m.update(url)
+return m.hexdigest()
+
+文件处理
+file = codecs.open("文件路径","w",encoding="utf-8")
+
+lines = json.dumps(dict(item), ensure_ascii=False)+"\n"
+
+self.file.write(lines)
+slef.file.close()
+
+
+mysql
+conn =MySQLdb.connect(127.0.0.1,'root','123456','spider_article',charset='utf8',use_unicode=True)
+cursor = con.cursor()
+params = list()
+params.append('1')
+params.append('2')
+cursor.execute(sql,tuple(params))
+conn.commit()
+
+
+abc.startswith('//')
+读取文件
+pickle.load(open('文件'，'rb'))
+写入文件
+pickle.dump(open('文件','wb'))
+
+
+
+
+

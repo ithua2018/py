@@ -1,0 +1,11 @@
+所有的命令可使用：virtualenvwrapper --help 进行查看，这里列出几个常用的：
+
+    创建基本环境：mkvirtualenv [环境名]
+
+    删除环境：rmvirtualenv [环境名]
+
+    激活环境：workon [环境名]
+
+    退出环境：deactivate
+
+    列出所有环境：workon 或者 lsvirtualenv -b

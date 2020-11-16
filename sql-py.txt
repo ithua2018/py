@@ -1,0 +1,14 @@
+
+
+    title = scrapy.Field()   255
+    content = scrapy.Field()   text
+    url = scrapy.Field()   500
+    url_md5_id = scrapy.Field()  50  primary key
+    image_origin_path = scrapy.Field() 500
+    image_save_path = scrapy.Field()  500
+    post_time = scrapy.Field()  date_time
+    tags = scrapy.Field()   255
+    poster = scrapy.Field()   50
+    comment_count = scrapy.Field()  10
+    view_count  = scrapy.Field()   10
+    recommend_count = scrapy.Field()  10

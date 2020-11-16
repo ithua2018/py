@@ -1,0 +1,128 @@
+下载python版本
+Python 3.6.8
+对应版本的whl文件 地址：
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+安装路径
+c\users\windows10\AppData\Local\Programs\Python\Python36-32
+
+配置 python命令 全局访问    windows用户变量
+1.(C:\Users\windows10\AppData\Local\Programs\Python\Python36-32\Scripts\)
+2.(C:\Users\windows10\AppData\Local\Programs\Python\Python36-32\)
+
+豆瓣源地址
+ sudo pip install -i https://pypi.douban.com/simple/ scrapy
+
+ sudo pip install -i https://pypi.douban.com/simple/ Django
+
+卸载命令
+pip unstall Django
+
+安装virtualenv
+pip install -i https://pypi.douban.com/simple/ virtualenv
+
+创建虚拟环境
+virtualenv  scrapytest
+运行虚拟环境
+activate.bat
+退出虚拟环境
+ deactivate.bat
+
+virtualenv -p  安装python不同版本的路径
+
+virtualenv 管理包(virtualenvwrapper)
+2.7
+pip install -i https://pypi.douban.com/simple/  virtualenvwrapper（2.7版本）
+3.6版本
+第一种方式（推荐）pip install -i https://pypi.douban.com/simple/  virtualenvwrapper-win（3.6版本 有效）
+
+workon 列出所有的虚拟环境
+mkvirtualenv scrapytest2 创建虚拟环境
+
+设置系统变量
+WORKON_HOME   D:\vitrualenvhome（虚拟环境所在的目录）
+mkvirtualenv  scrapyithua  虚拟环境会自动安装到  WORKON_HOME 中
+
+
+
+deactivate 退出虚拟环境
+
+workon scrapyithua  开启虚拟环境
+
+
+创建spider项目 
+在虚拟环境中
+1. scrapy startproject articleSpider
+2. cd articleSpider  
+scrapy genspider jobbole  news.cnblogs.com
+3.配置pycharm python环境
+setting中 搜索 Python Interpreter
+
+
+xpath 知识点
+
+article//div  不论多少层
+article/div 子元素 
+
+article/div[1]
+article/div[last()-1]
+//div[@ithua]   title名称是 ithua
+
+xpath 函数
+
+重点
+scrapy shell   +网址   进行 response.css() 在命令行中测试
+
+requests 库  ajax请求   
+pip install -i https://pypi.douban.com/simple/  requests
+
+
+数据库驱动安装
+pip install -i https://pypi.douban.com/simple/  mysqlclient
+
+
+from scrapy.loader import ItemLoader
+item_loader = ItemLoader(item=JobBoleArticleItem(), response=response)
+
+item_loader.add_css("字段","css选择器")
+item_loader.add_value("字段","值")
+article_item = item_loader.load_item()
+
+
+title = scrapy.Field(
+       input_processor = MapCompose(方法名1，方法名2)
+       output_processor = TakeFirst()
+		
+			
+)
+
+
+
+安装 selenium
+pip install -i https://pypi.douban.com/simple/  selenium
+
+http://npm.taobao.org/mirrors/chromedriver/2.46/
+
+
+命令行启动chrome
+chrome.exe   --remote-debugging-port=9222
+
+127.0.0.1:9222/json
+
+
+pip install mouse
+
+
+倒立文字识别  zheye
+
+
+
+
+
+
+
+
+
+
+
+
